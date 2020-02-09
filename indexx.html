@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>A Complete BE-IT Blog</title>
+	<link rel="stylesheet" type="text/css" href=css/style.css>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Molle:400i|Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Flamenco&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<style type="text/css">
+		*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	color: white;
+	font-family: 'Flamenco', cursive;
+	background-color: #f2f2f2;
+
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)), url('images/pic3.jpg');
+	clip-path: polygon(0% 0%,100% 0%,100% 80%,0% 100%);
+	height: 90vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+.logo{
+	color: rgba(80,60,110,0.8);
+	width: auto;
+	float: left;
+	margin-top: 40px;
+	font-family: 'Molle', cursive;
+	border-bottom: 2px solid #bf55ec;
+	border-left: 8px solid #bf55ec;
+	border-top-left-radius: 8px;
+    
+
+}
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+.main-nav{
+	float: right;
+	margin-top: 60px;
+
+}
+.main-nav li{
+   display: inline-block;
+   list-style: none;
+   
+   margin-left: 40px;
+}
+.main-nav li a{
+	padding: 5px 0;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+}
+.main-nav li a:hover{
+	border-bottom: 2px solid #bf55ec;
+
+}
+.main-content-header{
+	width: 1180px;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+h1{
+	color: #ff;
+	font-size: 240%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+.btn{
+	display: inline-block;
+	padding: 6px 30px;
+	margin-top: 10px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s , border 0.2s , color 0.2s;
+}
+.btn-full{
+	background-color: transparent;
+	color: #bf55ec;
+	margin-right: 15px;
+	border: 1px solid #bf55ec;
+}
+.btn-full:hover{
+	background-color: #fff;
+	color: red; 
+}
+.btn-nav{
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+}
+.btn-nav:hover{
+	background-color: #bf55ec;
+}
+.text-design{
+	font-family: 'Fjalla One', sans-serif;
+
+}
+.color-change{
+	animation: colorchange 1s infinite;
+}
+
+@keyframes colorchange{
+	0%{color:red;}
+	25%{color: #bf44ec;}
+	50%{color: white;}
+	100%{color: #bf44ec;}
+}
+.change-content:after{
+	content: '';
+	animation: changetext 8s infinite linear;
+	color: rgb(227, 36, 46);
+}
+@keyframes changetext{
+	0%{content:"NOTES";}
+	20%{content:"SOLUTION";}
+	40%{content:"CODE";}
+	60%{content:"QUESTION COLLECTION";}
+	80%{content:"E-BOOK";}
+	100%{content: "SYLLABUS";}
+	
+}
+.services h1{
+	color: red;
+	font-family: fantasy;
+	text-align: center;
+	border-bottom: 2px solid black;
+}
+.services p{
+	font-size: 200%;
+	justify-content: center;
+	color: black;
+	text-align: justify;
+	margin: 60px;
+}
+.mobile-icon{
+	display: none;}
+
+/*//////////body section/////*/	
+section{
+	width: 80%;
+	margin: auto;
+}
+
+section h2{
+	color: red;
+	font-weight: 600px;
+	text-align: center;
+	word-spacing: 4px;
+	letter-spacing: 3px;
+	border-bottom: 3px solid black;
+	
+}
+.content{
+	color: black;
+	border:1px solid #c2c2a3;
+	width:170px;
+	height: 140px;
+	margin-top: 30px;
+	margin-right: 30px;
+	text-align: center;
+	background-color:#c2c2a3;
+	box-shadow:5px 10px #888888;
+
+}
+.row1{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+
+}
+.content i{
+	font-size: 50px;
+	margin: 40px;
+
+
+
+}
+.row1 a{
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+.row1 a p{
+	margin: 15px;
+	font-weight: 700;
+	color: blue;
+
+}
+.content:hover{
+	color: blue;
+}
+.upheight{
+	margin-top: 80px;
+}
+/*//////////body section end////*/
+/*/////////about section////////*/
+.aboutsection{
+	margin-top: 70px;
+	
+}
+.about{
+	width: 80%;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	border:1px solid #9999ff;
+	background-color:#9999ff;
+	box-shadow:5px 10px #888888;
+
+
+}
+.aboutme{
+	margin-left: 15px;
+}
+.aboutme img{
+	height: 250px;
+	width: 230px;
+	margin-top: 20px;
+}
+.aboutme p{
+	color: blue;
+	letter-spacing: 2px;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 7px;
+	padding-left: 15px;
+
+}
+.aboutme i{
+	color: blue;
+	margin-left: 20px;
+	font-size: 25px;
+	margin-top: 10px;
+
+
+}
+.aboutme i:hover{color: tomato;}
+.aboutblog{
+	margin:30px 15px 5px 40px; 
+}
+.aboutblog h3{
+	color: red;
+	text-transform: capitalize;
+	border-bottom: 2px solid blue;
+	padding: 5px;
+	word-spacing: 3px;
+	letter-spacing: 3px;
+}
+.aboutblog p{
+	color: black;
+	text-align: justify;
+	padding-top: 12px;
+	width:320px;
+	line-height: 30px;
+	font-weight: 600;
+}
+a{
+	text-decoration: none;
+}
+/*///footer////*/
+.footer{
+	margin: 30px;
+	background-color: #2e2e1f;
+    height: 60px;
+    margin-bottom: 0;
+
+}
+.footer p{
+	color: white;
+	text-align: center;
+	padding: 30px;
+	
+}
+footer{
+	margin: 0;
+	padding: 0;
+}
+
+/*///Responsive queries////*/
+@media only screen and (max-width: 1180px){
+	.main-content-header{
+		width: 100%;
+		padding: 0 2%;
+
+	}
+	.logo{
+		padding: 0 2%;
+	}
+
+
+}
+@media only screen and (max-width: 998px){
+	h1{font-size: 200%;}
+
+}
+@media only screen and (max-width: 768px){
+  h1{font-size: 180%;}
+  .main-nav{display: none;}
+  .mobile-icon{
+  	display: inline-block;
+  	color: #fff;
+  	float: right;
+  	margin-top: 30px;
+  	margin-right: 20px;
+
+  }
+  .main-nav{float: left; margin-top: 30px;}
+  .main-nav li{
+  	display: block;
+  	margin-top: 10px;
+  }
+  .aboutblog p{
+		width: 80%;
+		margin:auto;
+	}
+	.aboutme{
+		margin: auto;
+	}
+}
+@media only screen and (max-width: 510px){
+	.main-content-header{
+		top: 60%;
+	}
+	h1{
+		font-size: 160%;
+	}
+
+
+}
+
+	</style>
+	
+</head>
+<body>
+ <header>
+ 	<nav>
+ 		<div class="row clearfix">
+ 			<h2 class="logo">MD AALAM'S BLOG</h2>
+ 			<ul class="main-nav animated slideInDown" id="check-class">
+ 				<li><a href="#">Home</a></li>
+ 				<li><a href="#abt">About</a></li>
+ 				<li><a href="#beit1">BE-IT Blog</a></li>
+ 				<li><a href="#">Privacy Policy</a></li>
+ 				
+ 			</ul>
+ 			<a href="#" class="mobile-icon"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
+ 		</div>
+ 	</nav>
+ 	<div class="main-content-header">
+ 	 <h1>WELCOME TO <span class="color-change text-design">BE-IT BLOG</span><br>
+ 	 HERE YOU CAN FIND <span class="change-content text-design"></span></h1>
+ 	
+ 	<a href="http://mdcodeweb-forum.173154.n8.nabble.com/" class="btn btn-full">FORUM</a>
+ 	<a href="#" class="btn btn-nav">contact</a>
+ </div>
+ </header>
+ <br>
+ 
+ <br>
+ <br>
+ <section id="beit1" >
+ 	<div class="body-content">
+ 		<h2>BE-IT BLOG</h2>
+ 	<div id="beit" class="row1">
+ 		<a href="https://mdcodeweb.blogspot.com/2019/09/pokhara-university-be-it-computer.html"><div class="content"><i class="fa fa-book"></i>
+ 		   </div> <p>Notes</p></a>
+ 		<a href="https://www.mdaalam.com.np/search/label/Solutions"><div class="content"><i class="fa fa-pencil-square-o"></i></div> <p>Solutions</p></a>
+ 		<a href="https://www.mdaalam.com.np/p/pokhara-university-be-it.html"><div class="content"><i class="fa fa-file-text"></i></div> <p>Question</p></a>
+ 		<a href="https://www.mdaalam.com.np/p/blog-page_14.html"><div class="content"><i class="fa fa-file-pdf-o"></i></div> <p>E-Book</p></a>
+ 		<a href="https://mdcodeweb.blogspot.com/2019/09/pokhara-university-syllabus.html"><div class="content"><i class="fa fa-files-o"></i></div> <p>Syllabus</p></a>
+ 	</div>	
+ 		
+ 		
+ 	
+ 	
+	 </div>
+</section>
+  
+
+<section  class="upheight">
+	<div class="body-content">
+ 		<h2>PROGRAMMING</h2>
+ 	<div id="program" class="row1" ">
+ 		<a href="https://www.mdaalam.com.np/search/label/C%20Programming"><div class="content"><i class="fa fa-file-code-o"></i>
+ 		   </div> <p>c</p></a>
+ 		<a href=""><div class="content"><i class="fa fa-code"></i></div> <p>c++</p></a>
+ 		<a href="https://github.com/mdaalam22/Data-Structure-Using-C"><div class="content"><i class="fa fa-file-code-o"></i></div> <p>Ds using c</p></a>
+ 	</div>
+ 	</div>	
+	
+</section>
+<!-- ///////about section/////// -->
+<section class="aboutsection" >
+	<h2>ABOUT</h2>
+	<div id="abt" class="about">
+		<div class="aboutme">
+			<img src="images/mypic.jpg">
+			<p style="text-align: center; color: red;"> Md.M Aalam</p>
+			<p>Web Designer/Blogger</p>
+			<a href="https://instagram.com/mdaalam22"><i class="fa fa-instagram"></i></a>
+			<a href=""><i class="fa fa-facebook-square"></i></a>
+			<a href=""><i class="fa fa-linkedin-square"></i></a>
+			<a href=""><i class="fa fa-twitter-square"></i></a>
+		</div>
+		<div class="aboutblog">
+			<h3>about this blog</h3>
+			<p>This blog is created with a view of  providing up to date notes, solutions, question collection , e-book, code to the IT engineering students. The 
+				<a href="https://www.mdaalam.com.np"> www.mdaalam.com.np</a> is a mission-driven not-for-profit website, a hub which will help you throughout your IT engineering career. Here we aim at providing you with all the useful and needful content of <mark>BE-IT</mark> engineering.</p>
+		</div>
+	</div>
+
+</section>
+<footer>
+	<div class="footer">
+		<p>@2020- www.mdaalam.com.np. All Right Reserved</p>
+	</div>
+</footer>
+ <script type="text/javascript">
+
+ 	function slideshow(){
+ 		var x = document.getElementById('check-class');
+ 		if(x.style.display === "none") {
+ 			x.style.display="Block";
+ 		}else{
+ 			x.style.display="none";
+ 		}
+
+ 	}
+ 	$(document).ready(function(){
+ 		$(window).scroll(function(){
+ 			var positiontop = $(document).scrollTop();
+ 			console.log(positiontop);
+ 			if((positiontop>30 )&&(positiontop<875)){
+ 				$('#beit').addClass('animated slideInUp');
+ 			}
+ 			if((positiontop>400)&&(positiontop <990)){
+ 				$('#program').addClass('animated slideInUp');
+ 			}
+ 			if((positiontop>750)&&(positiontop <1640)){
+ 				$('#abt').addClass('animated slideInUp');
+ 			}
+       
+       
+ 	});
+
+ 	});
+ 	
+ </script>
+ 
+</body>
+</html>
