@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>A Complete BE-IT Blog</title>
-	<link rel="stylesheet" type="text/css" href=css/style.css>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Molle:400i|Pacifico&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Flamenco&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-	<style type="text/css">
-		*{
+*{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
@@ -27,7 +13,7 @@ body{
 
 }
 header{
-	background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)), url('images/pic3.jpg');
+	background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)), url('../images/pic3.jpg');
 	clip-path: polygon(0% 0%,100% 0%,100% 80%,0% 100%);
 	height: 90vh;
 	background-size: cover;
@@ -361,125 +347,3 @@ footer{
 
 
 }
-
-	</style>
-	
-</head>
-<body>
- <header>
- 	<nav>
- 		<div class="row clearfix">
- 			<h2 class="logo">MD AALAM'S BLOG</h2>
- 			<ul class="main-nav animated slideInDown" id="check-class">
- 				<li><a href="#">Home</a></li>
- 				<li><a href="#abt">About</a></li>
- 				<li><a href="#beit1">BE-IT Blog</a></li>
- 				<li><a href="#">Privacy Policy</a></li>
- 				
- 			</ul>
- 			<a href="#" class="mobile-icon"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
- 		</div>
- 	</nav>
- 	<div class="main-content-header">
- 	 <h1>WELCOME TO <span class="color-change text-design">BE-IT BLOG</span><br>
- 	 HERE YOU CAN FIND <span class="change-content text-design"></span></h1>
- 	
- 	<a href="http://mdcodeweb-forum.173154.n8.nabble.com/" class="btn btn-full">FORUM</a>
- 	<a href="#" class="btn btn-nav">contact</a>
- </div>
- </header>
- <br>
- 
- <br>
- <br>
- <section id="beit1" >
- 	<div class="body-content">
- 		<h2>BE-IT BLOG</h2>
- 	<div id="beit" class="row1">
- 		<a href="https://mdcodeweb.blogspot.com/2019/09/pokhara-university-be-it-computer.html"><div class="content"><i class="fa fa-book"></i>
- 		   </div> <p>Notes</p></a>
- 		<a href="https://www.mdaalam.com.np/search/label/Solutions"><div class="content"><i class="fa fa-pencil-square-o"></i></div> <p>Solutions</p></a>
- 		<a href="https://www.mdaalam.com.np/p/pokhara-university-be-it.html"><div class="content"><i class="fa fa-file-text"></i></div> <p>Question</p></a>
- 		<a href="https://www.mdaalam.com.np/p/blog-page_14.html"><div class="content"><i class="fa fa-file-pdf-o"></i></div> <p>E-Book</p></a>
- 		<a href="https://mdcodeweb.blogspot.com/2019/09/pokhara-university-syllabus.html"><div class="content"><i class="fa fa-files-o"></i></div> <p>Syllabus</p></a>
- 	</div>	
- 		
- 		
- 	
- 	
-	 </div>
-</section>
-  
-
-<section  class="upheight">
-	<div class="body-content">
- 		<h2>PROGRAMMING</h2>
- 	<div id="program" class="row1" ">
- 		<a href="https://www.mdaalam.com.np/search/label/C%20Programming"><div class="content"><i class="fa fa-file-code-o"></i>
- 		   </div> <p>c</p></a>
- 		<a href=""><div class="content"><i class="fa fa-code"></i></div> <p>c++</p></a>
- 		<a href="https://github.com/mdaalam22/Data-Structure-Using-C"><div class="content"><i class="fa fa-file-code-o"></i></div> <p>Ds using c</p></a>
- 	</div>
- 	</div>	
-	
-</section>
-<!-- ///////about section/////// -->
-<section class="aboutsection" >
-	<h2>ABOUT</h2>
-	<div id="abt" class="about">
-		<div class="aboutme">
-			<img src="images/mypic.jpg">
-			<p style="text-align: center; color: red;"> Md.M Aalam</p>
-			<p>Web Designer/Blogger</p>
-			<a href="https://instagram.com/mdaalam22"><i class="fa fa-instagram"></i></a>
-			<a href=""><i class="fa fa-facebook-square"></i></a>
-			<a href=""><i class="fa fa-linkedin-square"></i></a>
-			<a href=""><i class="fa fa-twitter-square"></i></a>
-		</div>
-		<div class="aboutblog">
-			<h3>about this blog</h3>
-			<p>This blog is created with a view of  providing up to date notes, solutions, question collection , e-book, code to the IT engineering students. The 
-				<a href="https://www.mdaalam.com.np"> www.mdaalam.com.np</a> is a mission-driven not-for-profit website, a hub which will help you throughout your IT engineering career. Here we aim at providing you with all the useful and needful content of <mark>BE-IT</mark> engineering.</p>
-		</div>
-	</div>
-
-</section>
-<footer>
-	<div class="footer">
-		<p>@2020- www.mdaalam.com.np. All Right Reserved</p>
-	</div>
-</footer>
- <script type="text/javascript">
-
- 	function slideshow(){
- 		var x = document.getElementById('check-class');
- 		if(x.style.display === "none") {
- 			x.style.display="Block";
- 		}else{
- 			x.style.display="none";
- 		}
-
- 	}
- 	$(document).ready(function(){
- 		$(window).scroll(function(){
- 			var positiontop = $(document).scrollTop();
- 			console.log(positiontop);
- 			if((positiontop>30 )&&(positiontop<875)){
- 				$('#beit').addClass('animated slideInUp');
- 			}
- 			if((positiontop>400)&&(positiontop <990)){
- 				$('#program').addClass('animated slideInUp');
- 			}
- 			if((positiontop>750)&&(positiontop <1640)){
- 				$('#abt').addClass('animated slideInUp');
- 			}
-       
-       
- 	});
-
- 	});
- 	
- </script>
- 
-</body>
-</html>
